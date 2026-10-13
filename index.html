@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Priyanshu Patel - Web Developer & Programmer, B.Tech CSE student at JSS Academy of Technical Education, Noida. Exploring web development, C++, and interactive design.">
+  <meta name="keywords" content="Priyanshu Patel, Web Developer, Programmer, Portfolio, B.Tech CSE, JSS Noida, C++, JavaScript, React">
+  <meta name="author" content="Priyanshu Patel">
+  <title>Priyanshu Patel | Web Developer & Programmer</title>
+  
+  <!-- Favicon (SVG data URI for instant crisp loading) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%238a2be2'/%3E%3Cstop offset='100%25' stop-color='%2300d4ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='%230d0d14'/%3E%3Ctext x='50' y='65' font-family='sans-serif' font-size='46' font-weight='900' fill='url(%23g)' text-anchor='middle'%3EPP%3C/text%3E%3C/svg%3E">
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons for Technology & UI elements -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Custom JavaScript (deferred execution) -->
+  <script src="script.js" defer></script>
+</head>
+<body data-theme="dark">
+  <!-- Subtle Canvas/Ambient Background for glowing particles -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-grid-overlay" aria-hidden="true"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo-link" aria-label="Priyanshu Patel Homepage">
+        <span class="logo-badge">PP</span>
+        <span class="logo-name">Priyanshu <span class="accent-text">Patel</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <i class="fa-solid fa-moon theme-icon moon-icon"></i>
+          <i class="fa-solid fa-sun theme-icon sun-icon"></i>
+        </button>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+    
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Available for learning & collaboration</span>
+          </div>
+          <span class="hero-subtitle">HELLO, I'M</span>
+          <h1 class="hero-title">
+            Priyanshu <span class="gradient-text">Patel</span>
+          </h1>
+          <div>
+          <div class="hero-role-wrapper">
+            <span class="role-static">A passionate&nbsp;</span>
+            <span class="role-typed" id="typed-role">Web Developer</span>
+            <span class="typing-cursor" aria-hidden="true">|</span>
+          </div>
+          <div>
+            <img src="C:\Users\pc\OneDrive\Desktop\portfolio2\images\profile.png" alt="image">
+          </div>
+        </div>
+          <p class="hero-tagline">
+            Building ideas into interactive digital experiences.
+          </p>
+          <p class="hero-description">
+            Computer Science and Engineering student at JSS Academy of Technical Education, Noida. Enthusiastic about clean code, modern frontend design, and solving problems through programming.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Get In Touch</span>
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="socials-label">Connect:</span>
+            <a href="https://github.com/Priyanshu-150706" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://leetcode.com/u/priyanshu150706/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LeetCode Profile">
+              <i class="fa-solid fa-code"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Decorative Futuristic Developer Visual / CSS Art -->
+        <div class="hero-visual reveal-on-scroll">
+          <div class="code-terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">developer@priyanshu: ~</span>
+              <div class="terminal-badge"><i class="fa-solid fa-circle-check"></i> ready</div>
+            </div>
+            <div class="terminal-body">
+              <div class="code-line"><span class="c-keyword">const</span> <span class="c-variable">developer</span> = {</div>
+              <div class="code-line indent-1"><span class="c-prop">name</span>: <span class="c-string">"Priyanshu Patel"</span>,</div>
+              <div class="code-line indent-1"><span class="c-prop">role</span>: <span class="c-string">"Web Developer & Programmer"</span>,</div>
+              <div class="code-line indent-1"><span class="c-prop">education</span>: <span class="c-string">"B.Tech CSE @ JSS Noida"</span>,</div>
+              <div class="code-line indent-1"><span class="c-prop">languages</span>: [<span class="c-string">"C++"</span>, <span class="c-string">"JavaScript"</span>],</div>
+              <div class="code-line indent-1"><span class="c-prop">focus</span>: [<span class="c-string">"HTML/CSS"</span>, <span class="c-string">"React"</span>, <span class="c-string">"Problem Solving"</span>],</div>
+              <div class="code-line indent-1"><span class="c-prop">status</span>: <span class="c-boolean">"Building & Learning"</span></div>
+              <div class="code-line">};</div>
+              <div class="code-line divider-line"></div>
+              <div class="code-line"><span class="c-comment">// Ready to turn creative ideas into reality</span></div>
+              <div class="code-line"><span class="c-variable">developer</span>.<span class="c-func">createImpactfulSolutions</span>();</div>
+            </div>
+            <!-- Floating Decorative Tech Badges -->
+            <div class="floating-badge badge-cpp" title="C++">
+              <i class="fa-solid fa-microchip"></i> C++
+            </div>
+            <div class="floating-badge badge-js" title="JavaScript">
+              <i class="fa-brands fa-js"></i> JS
+            </div>
+            <div class="floating-badge badge-react" title="React">
+              <i class="fa-brands fa-react"></i> React
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">DISCOVER</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Introduction -->
+          <div class="about-text-card reveal-on-scroll">
+            <h3 class="about-greeting">
+              Hi, I'm <span class="gradient-text">Priyanshu Patel</span>
+            </h3>
+            <p class="about-paragraph">
+              Hi, I'm Priyanshu Patel, a passionate Web Developer and Programmer currently pursuing my B.Tech in Computer Science and Engineering at JSS Academy of Technical Education, Noida.
+            </p>
+            <p class="about-paragraph">
+              I enjoy building modern, responsive web applications and solving problems through programming. I'm continuously improving my technical skills, exploring new technologies, and working on projects that turn creative ideas into practical solutions.
+            </p>
+            <p class="about-paragraph">
+              My goal is to become a skilled software developer and build impactful digital experiences through clean code, creativity, and continuous learning.
+            </p>
+
+            <div class="about-meta">
+              <div class="meta-item">
+                <span class="meta-label">Location:</span>
+                <span class="meta-val">Noida, India</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Study:</span>
+                <span class="meta-val">JSSATE Noida</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Graduation:</span>
+                <span class="meta-val">2029</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 Information Pillar Cards -->
+          <div class="about-cards-column reveal-on-scroll">
+            <!-- Card 1 -->
+            <div class="info-card">
+              <div class="info-icon-wrapper">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="info-card-content">
+                <h4 class="info-card-title">B.Tech CSE Student</h4>
+                <p class="info-card-desc">
+                  Currently in 2nd year at JSS Academy of Technical Education, Noida, focusing on computer science fundamentals and software concepts.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="info-card">
+              <div class="info-icon-wrapper">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="info-card-content">
+                <h4 class="info-card-title">Web Development Enthusiast</h4>
+                <p class="info-card-desc">
+                  Passionate about building responsive, accessible, and interactive user interfaces with modern web standards and clean styling.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="info-card">
+              <div class="info-icon-wrapper">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="info-card-content">
+                <h4 class="info-card-title">Programming & Problem Solving</h4>
+                <p class="info-card-desc">
+                  Sharpening algorithmic thinking and data structure problem-solving using C++ and JavaScript on LeetCode.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">CAPABILITIES</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">Languages, technologies, and tools I use to build projects and write code</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Group 1: Programming Languages -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fa-solid fa-terminal"></i>
+              </div>
+              <h3 class="category-title">Programming Languages</h3>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <div class="chip-icon cpp-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="chip-info">
+                  <span class="chip-name">C++</span>
+                  <span class="chip-detail">Data Structures & Logic</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <div class="chip-icon js-icon"><i class="fa-brands fa-square-js"></i></div>
+                <div class="chip-info">
+                  <span class="chip-name">JavaScript</span>
+                  <span class="chip-detail">Core ES6+ & Logic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 2: Web Development -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <h3 class="category-title">Web Development</h3>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <div class="chip-icon html-icon"><i class="fa-brands fa-html5"></i></div>
+                <div class="chip-info">
+                  <span class="chip-name">HTML5</span>
+                  <span class="chip-detail">Semantic & Accessible</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <div class="chip-icon css-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                <div class="chip-info">
+                  <span class="chip-name">CSS3</span>
+                  <span class="chip-detail">Flexbox, Grid & Modern Styling</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <div class="chip-icon js-icon"><i class="fa-brands fa-js"></i></div>
+                <div class="chip-info">
+                  <span class="chip-name">JavaScript</span>
+                  <span class="chip-detail">DOM & Interactive Web</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <div class="chip-icon react-icon"><i class="fa-brands fa-react"></i></div>
+                <div class="chip-info">
+                  <span class="chip-name">React</span>
+                  <span class="chip-detail">Component-based UI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 3: Developer Tools -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <h3 class="category-title">Developer Tools</h3>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <div class="chip-icon vscode-icon"><i class="fa-solid fa-code"></i></div>
+                <div class="chip-info">
+                  <span class="chip-name">Visual Studio Code</span>
+                  <span class="chip-detail">Code Editor & Workflow</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <div class="chip-icon git-icon"><i class="fa-brands fa-git-alt"></i></div>
+                <div class="chip-info">
+                  <span class="chip-name">Git</span>
+                  <span class="chip-detail">Version Control</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <div class="chip-icon github-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="chip-info">
+                  <span class="chip-name">GitHub</span>
+                  <span class="chip-detail">Repository Hosting & Collab</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">SHOWCASE</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Real web applications designed with responsive layouts and clean code</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Weather App -->
+          <article class="project-card reveal-on-scroll">
+            <div class="project-preview weather-preview">
+              <!-- Visual Illustration for Weather App -->
+              <div class="weather-art">
+                <div class="weather-sun"></div>
+                <div class="weather-cloud"></div>
+                <div class="weather-card-mockup">
+                  <div class="mockup-header">
+                    <span><i class="fa-solid fa-location-dot"></i> City Forecast</span>
+                    <span class="temp">24°C</span>
+                  </div>
+                  <div class="mockup-bar"></div>
+                  <div class="mockup-bar short"></div>
+                </div>
+              </div>
+              <div class="project-badge">Frontend App</div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Weather App</h3>
+              <p class="project-description">
+                A weather application designed to help users explore weather conditions for selected locations through a simple and user-friendly interface.
+              </p>
+              
+              <div class="project-tech-stack">
+                <span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+                <span class="tech-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                <span class="tech-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <!-- NOTE: Replace '#' with your actual GitHub repository link -->
+                <a href="#" class="btn btn-sm btn-outline placeholder-link" data-link-type="GitHub Repository" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository for Weather App">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub Repository</span>
+                </a>
+                <!-- NOTE: Replace '#' with your actual Live Demo link -->
+                <a href="#" class="btn btn-sm btn-primary placeholder-link" data-link-type="Live Demo" target="_blank" rel="noopener noreferrer" aria-label="Live Demo of Weather App">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Coffee Website -->
+          <article class="project-card reveal-on-scroll">
+            <div class="project-preview coffee-preview">
+              <!-- Visual Illustration for Coffee Website -->
+              <div class="coffee-art">
+                <div class="coffee-cup">
+                  <div class="cup-steam steam-1"></div>
+                  <div class="cup-steam steam-2"></div>
+                  <div class="cup-body">
+                    <div class="cup-handle"></div>
+                  </div>
+                  <div class="cup-saucer"></div>
+                </div>
+                <div class="coffee-bean bean-1"></div>
+                <div class="coffee-bean bean-2"></div>
+              </div>
+              <div class="project-badge">Web Design</div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Coffee Website</h3>
+              <p class="project-description">
+                A coffee-themed website featuring an attractive visual design and a browsing experience for coffee-related content.
+              </p>
+              
+              <div class="project-tech-stack">
+                <span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+                <span class="tech-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                <span class="tech-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <!-- NOTE: Replace '#' with your actual GitHub repository link -->
+                <a href="#" class="btn btn-sm btn-outline placeholder-link" data-link-type="GitHub Repository" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository for Coffee Website">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub Repository</span>
+                </a>
+                <!-- NOTE: Replace '#' with your actual Live Demo link -->
+                <a href="#" class="btn btn-sm btn-primary placeholder-link" data-link-type="Live Demo" target="_blank" rel="noopener noreferrer" aria-label="Live Demo of Coffee Website">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">ACADEMICS</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <p class="section-subtitle">Academic background and current degree path</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="education-card-wrapper reveal-on-scroll">
+          <div class="education-card">
+            <div class="education-icon-box">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="education-details">
+              <div class="education-badge-row">
+                <span class="edu-status-badge"><i class="fa-regular fa-clock"></i> Current Year: 2nd Year</span>
+                <span class="edu-grad-badge"><i class="fa-regular fa-calendar-check"></i> Expected Graduation: 2029</span>
+              </div>
+              <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+              <h4 class="edu-branch">Computer Science and Engineering (CSE)</h4>
+              <p class="edu-institution">
+                <i class="fa-solid fa-building-columns"></i> JSS Academy of Technical Education, Noida
+              </p>
+              <p class="edu-description">
+                Building a rigorous foundation in core computer science, computing concepts, algorithms, object-oriented programming, and modern software development practices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CODING PROFILES SECTION -->
+    <section class="section profiles-section" id="coding-profiles">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">ONLINE PRESENCE</span>
+          <h2 class="section-title">Coding <span class="gradient-text">Profiles</span></h2>
+          <p class="section-subtitle">Connect with my active development repositories and problem-solving practice</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="profiles-grid">
+          <!-- GitHub Card -->
+          <a href="https://github.com/Priyanshu-150706" target="_blank" rel="noopener noreferrer" class="profile-card github-card reveal-on-scroll">
+            <div class="profile-card-top">
+              <div class="profile-brand-icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <span class="profile-external-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </div>
+            <div class="profile-info">
+              <h3 class="profile-platform">GitHub</h3>
+              <p class="profile-username">@Priyanshu-150706</p>
+              <p class="profile-desc">Explore my repositories, code commits, and open-source project progress.</p>
+            </div>
+            <div class="profile-footer-action">
+              <span>View GitHub Profile</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+
+          <!-- LeetCode Card -->
+          <a href="https://leetcode.com/u/priyanshu150706/" target="_blank" rel="noopener noreferrer" class="profile-card leetcode-card reveal-on-scroll">
+            <div class="profile-card-top">
+              <div class="profile-brand-icon leetcode-brand">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <span class="profile-external-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </div>
+            <div class="profile-info">
+              <h3 class="profile-platform">LeetCode</h3>
+              <p class="profile-username">@priyanshu150706</p>
+              <p class="profile-desc">Practicing data structures, algorithmic problem solving, and logical coding challenges.</p>
+            </div>
+            <div class="profile-footer-action">
+              <span>View LeetCode Profile</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">GET IN TOUCH</span>
+          <h2 class="section-title">Let's Build Something <span class="gradient-text">Together</span></h2>
+          <p class="section-subtitle">Have a project idea, open-source opportunity, or question? Feel free to reach out!</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Information & Quick Links -->
+          <div class="contact-info-panel reveal-on-scroll">
+            <h3 class="panel-heading">Open for Opportunities & Discussions</h3>
+            <p class="panel-desc">
+              I am always excited to connect with fellow developers, students, and mentors. Whether it's discussing web technologies, collaborating on projects, or sharing problem-solving ideas, my inbox is open.
+            </p>
+
+            <div class="contact-items-list">
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="contact-item-label">Location</span>
+                  <span class="contact-item-value">Noida, Uttar Pradesh, India</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-school"></i></div>
+                <div>
+                  <span class="contact-item-label">Institution</span>
+                  <span class="contact-item-value">JSS Academy of Technical Education</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <span class="contact-item-label">Email Contact</span>
+                  <!-- Configurable placeholder: Replace with user's verified email address when ready -->
+                  <span class="contact-item-value configurable-hint" title="Add your actual email address in index.html">
+                    priyanshu150706@gmail.com
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social-pills">
+              <span class="pills-title">Coding Handles:</span>
+              <div class="pills-group">
+                <a href="https://github.com/Priyanshu-150706" target="_blank" rel="noopener noreferrer" class="pill-link">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="https://leetcode.com/u/priyanshu150706/" target="_blank" rel="noopener noreferrer" class="pill-link">
+                  <i class="fa-solid fa-code"></i> LeetCode
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form (Frontend validated demo) -->
+          <div class="contact-form-card reveal-on-scroll">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name <span class="required-star">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-user input-icon"></i>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="e.g. John Doe" required autocomplete="name">
+                </div>
+                <span class="form-error" id="name-error">Please enter your name (at least 2 characters).</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span class="required-star">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-envelope input-icon"></i>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="e.g. john@example.com" required autocomplete="email">
+                </div>
+                <span class="form-error" id="email-error">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject <span class="required-star">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-tag input-icon"></i>
+                  <input type="text" id="subject" name="subject" class="form-input" placeholder="e.g. Project Collaboration or Inquiry" required>
+                </div>
+                <span class="form-error" id="subject-error">Please enter a subject (at least 3 characters).</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message <span class="required-star">*</span></label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-regular fa-comment-dots input-icon textarea-icon"></i>
+                  <textarea id="message" name="message" rows="5" class="form-input form-textarea" placeholder="Write your message here..." required></textarea>
+                </div>
+                <span class="form-error" id="message-error">Please enter a message (at least 10 characters).</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+
+              <!-- Transparent notification banner about frontend demo status -->
+              <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
+              
+              <p class="form-note">
+                <i class="fa-solid fa-circle-info"></i> Note: This portfolio is a client-side frontend demo. Submitting validates your inputs and provides a mailto link or message preview. No backend service is connected yet.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo-link">
+            <span class="logo-badge">PP</span>
+            <span class="logo-name">Priyanshu <span class="accent-text">Patel</span></span>
+          </a>
+          <p class="footer-tagline">Web Developer & Programmer | B.Tech CSE</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Quick Navigation">
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-socials">
+          <a href="https://github.com/Priyanshu-150706" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://leetcode.com/u/priyanshu150706/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LeetCode">
+            <i class="fa-solid fa-code"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Designed &amp; Built by <span class="author-name">Priyanshu Patel</span>. All rights reserved.
+        </p>
+        <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll back to top" title="Back to top">
+          <span>Back to Top</span>
+          <i class="fa-solid fa-chevron-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal / Toast for Placeholder Links -->
+  <div id="placeholder-toast" class="placeholder-toast" role="status" aria-live="polite">
+    <div class="toast-content">
+      <i class="fa-solid fa-circle-info toast-icon"></i>
+      <span id="toast-message">Placeholder link: configure your URL in index.html</span>
+    </div>
+  </div>
+
+</body>
+</html>
